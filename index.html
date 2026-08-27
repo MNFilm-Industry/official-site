@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MNfilm 芒柠影业 —— 校园摄影社团，用镜头讲述你的故事。">
+    <meta name="theme-color" content="#0a0a0d">
+    <title>芒柠影业 MNfilm · 摄影社团</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="gallery.css?v=8">
+</head>
+<body>
+<a class="skip-link" href="#main"><span lang-text="zh">跳到主要内容</span><span lang-text="en" hidden>Skip to main content</span></a>
+
+<!-- ============ 导航栏 ============ -->
+<header class="nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="#home" aria-label="MNfilm 芒柠影业">
+            <span class="nav-logo-wrap">
+                <img src="logo.png" alt="" width="40" height="40">
+                <span class="logo-fallback" hidden aria-hidden="true">MN<small>FILM</small></span>
+            </span>
+            <span class="nav-wordmark">
+                <strong lang-text="zh">芒柠影业</strong>
+                <strong lang-text="en" hidden>MNfilm</strong>
+                <em>MNfilm</em>
+            </span>
+        </a>
+        <nav class="nav-links" id="site-nav" aria-label="主导航" data-label-zh="主导航" data-label-en="Main navigation">
+            <a href="#home" aria-current="page"><span lang-text="zh">首页</span><span lang-text="en" hidden>Home</span></a>
+            <a href="#about"><span lang-text="zh">关于我们</span><span lang-text="en" hidden>About</span></a>
+            <a href="#gallery"><span lang-text="zh">作品精选</span><span lang-text="en" hidden>Gallery</span></a>
+            <a href="#activities"><span lang-text="zh">活动规划</span><span lang-text="en" hidden>Activities</span></a>
+            <a href="#contact"><span lang-text="zh">加入我们</span><span lang-text="en" hidden>Contact</span></a>
+        </nav>
+        <div class="nav-actions">
+            <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch to English">EN</button>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开菜单" data-label-zh="打开菜单" data-label-en="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ============ Hero：全屏循环轮播 ============ -->
+<section class="hero" id="home" data-slideshow aria-roledescription="carousel"
+         aria-label="作品轮播" data-label-zh="作品轮播" data-label-en="Featured photographs">
+    <div class="hero-slideshow carousel-frame">
+        <div class="carousel-stage hero-stage" tabindex="0"
+             aria-label="照片预览，可用左右方向键切换" data-label-zh="照片预览，可用左右方向键切换" data-label-en="Photo preview. Use the left and right arrow keys to browse.">
+            <div class="carousel-track">
+                <img class="carousel-image" src="assets/gallery/full/DSC_6535.webp"
+                     srcset="assets/gallery/small/DSC_6535.webp 800w, assets/gallery/full/DSC_6535.webp 1600w"
+                     sizes="100vw" width="1600" height="1068"
+                     alt="芒柠影业摄影作品 01，DSC_6535.jpg" fetchpriority="high" decoding="async" draggable="false">
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" data-gallery-step="-1"
+                    aria-label="上一张照片" data-label-zh="上一张照片" data-label-en="Previous photo"><span aria-hidden="true">‹</span></button>
+            <button class="carousel-arrow carousel-next" type="button" data-gallery-step="1"
+                    aria-label="下一张照片" data-label-zh="下一张照片" data-label-en="Next photo"><span aria-hidden="true">›</span></button>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow"><span lang-text="zh">MNfilm · 校园摄影社团</span><span lang-text="en" hidden>MNfilm · Campus Photography Club</span></p>
+            <h1 class="hero-title">
+                <span lang-text="zh">芒柠影业</span>
+                <span lang-text="en" hidden>MNfilm</span>
+            </h1>
+            <p class="hero-tagline"><span lang-text="zh">用镜头讲述你的故事，记录每一帧热爱。</span><span lang-text="en" hidden>Tell your story with the lens — one frame at a time.</span></p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#gallery"><span lang-text="zh">浏览作品</span><span lang-text="en" hidden>View Gallery</span></a>
+                <a class="btn btn-ghost" href="#contact"><span lang-text="zh">加入我们</span><span lang-text="en" hidden>Join Us</span></a>
+            </div>
+        </div>
+        <div class="hero-tools">
+            <div class="carousel-counter hero-counter" aria-live="off" aria-atomic="true"><strong class="carousel-current">01</strong><span>/</span><span class="carousel-total">26</span></div>
+            <button class="carousel-autoplay" type="button" aria-label="暂停自动轮播" data-label-zh="暂停自动轮播" data-label-en="Pause automatic slideshow">
+                <span class="carousel-autoplay-icon" aria-hidden="true">Ⅱ</span>
+                <span class="carousel-autoplay-label">暂停轮播</span>
+            </button>
+        </div>
+        <div class="carousel-progress" aria-hidden="true"></div>
+        <a class="hero-scroll" href="#about">
+            <span lang-text="zh">向下滚动</span><span lang-text="en" hidden>Scroll down</span>
+            <span class="hero-scroll-line" aria-hidden="true"></span>
+        </a>
+    </div>
+    <!-- 轮播数据源（隐藏，供引擎读取） -->
+        <!-- 轮播数据源（隐藏，供引擎读取） -->
+    <div class="carousel-thumbs hero-thumbs" hidden>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6535.webp" data-name="DSC_6535.jpg" data-srcset="assets/gallery/small/DSC_6535.webp 800w, assets/gallery/full/DSC_6535.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5059.webp" data-name="DSC_5059.jpg" data-srcset="assets/gallery/small/DSC_5059.webp 800w, assets/gallery/full/DSC_5059.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5094.webp" data-name="DSC_5094.jpg" data-srcset="assets/gallery/small/DSC_5094.webp 800w, assets/gallery/full/DSC_5094.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5132.webp" data-name="DSC_5132.jpg" data-srcset="assets/gallery/small/DSC_5132.webp 800w, assets/gallery/full/DSC_5132.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5289.webp" data-name="DSC_5289.jpg" data-srcset="assets/gallery/small/DSC_5289.webp 800w, assets/gallery/full/DSC_5289.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5407.webp" data-name="DSC_5407.jpg" data-srcset="assets/gallery/small/DSC_5407.webp 800w, assets/gallery/full/DSC_5407.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5467.webp" data-name="DSC_5467.jpg" data-srcset="assets/gallery/small/DSC_5467.webp 800w, assets/gallery/full/DSC_5467.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5513.webp" data-name="DSC_5513.jpg" data-srcset="assets/gallery/small/DSC_5513.webp 800w, assets/gallery/full/DSC_5513.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5539.webp" data-name="DSC_5539.jpg" data-srcset="assets/gallery/small/DSC_5539.webp 800w, assets/gallery/full/DSC_5539.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5592.webp" data-name="DSC_5592.jpg" data-srcset="assets/gallery/small/DSC_5592.webp 800w, assets/gallery/full/DSC_5592.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5779.webp" data-name="DSC_5779.jpg" data-srcset="assets/gallery/small/DSC_5779.webp 800w, assets/gallery/full/DSC_5779.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_5842.webp" data-name="DSC_5842.jpg" data-srcset="assets/gallery/small/DSC_5842.webp 800w, assets/gallery/full/DSC_5842.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6523.webp" data-name="DSC_6523.jpg" data-srcset="assets/gallery/small/DSC_6523.webp 800w, assets/gallery/full/DSC_6523.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6550.webp" data-name="DSC_6550.jpg" data-srcset="assets/gallery/small/DSC_6550.webp 800w, assets/gallery/full/DSC_6550.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6601.webp" data-name="DSC_6601.jpg" data-srcset="assets/gallery/small/DSC_6601.webp 800w, assets/gallery/full/DSC_6601.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6646.webp" data-name="DSC_6646.jpg" data-srcset="assets/gallery/small/DSC_6646.webp 800w, assets/gallery/full/DSC_6646.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6682.webp" data-name="DSC_6682.jpg" data-srcset="assets/gallery/small/DSC_6682.webp 800w, assets/gallery/full/DSC_6682.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6730.webp" data-name="DSC_6730.jpg" data-srcset="assets/gallery/small/DSC_6730.webp 800w, assets/gallery/full/DSC_6730.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6753.webp" data-name="DSC_6753.jpg" data-srcset="assets/gallery/small/DSC_6753.webp 800w, assets/gallery/full/DSC_6753.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6763.webp" data-name="DSC_6763.jpg" data-srcset="assets/gallery/small/DSC_6763.webp 800w, assets/gallery/full/DSC_6763.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_6972.webp" data-name="DSC_6972.jpg" data-srcset="assets/gallery/small/DSC_6972.webp 800w, assets/gallery/full/DSC_6972.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_7118.webp" data-name="DSC_7118.jpg" data-srcset="assets/gallery/small/DSC_7118.webp 800w, assets/gallery/full/DSC_7118.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/DSC_7136.webp" data-name="DSC_7136.jpg" data-srcset="assets/gallery/small/DSC_7136.webp 800w, assets/gallery/full/DSC_7136.webp 1600w" data-width="1600" data-height="1068"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/IMG_8913.webp" data-name="IMG_8913.jpg" data-srcset="assets/gallery/small/IMG_8913.webp 800w, assets/gallery/full/IMG_8913.webp 1600w" data-width="1600" data-height="1343"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/IMG_9002_1.webp" data-name="IMG_9002_1.jpg" data-srcset="assets/gallery/small/IMG_9002_1.webp 800w, assets/gallery/full/IMG_9002_1.webp 1600w" data-width="1600" data-height="1067"></a>
+        <a class="carousel-thumb" href="assets/gallery/full/IMG_9050.webp" data-name="IMG_9050.jpg" data-srcset="assets/gallery/small/IMG_9050.webp 800w, assets/gallery/full/IMG_9050.webp 1600w" data-width="1600" data-height="1067"></a>
+    </div>
+    <p class="carousel-status" role="status"></p>
+</section>
+
+<main id="main">
+    <!-- ============ 关于我们 ============ -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow"><span lang-text="zh">ABOUT US · 社团简介</span><span lang-text="en" hidden>ABOUT US</span></p>
+                <h2 class="section-title"><span lang-text="zh">关于我们</span><span lang-text="en" hidden>About Us</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-lead" lang-text="zh">
+                    热爱电影创作与摄像？欢迎加入<strong>MNfilm 芒柠影业</strong>。沉浸式体验完整电影拍摄流程，从剧本创作到后期制作，专业助力你的成长。
+                </div>
+                <div class="about-lead" lang-text="en" hidden>
+                    Passionate about filmmaking and videography? Welcome to <strong>MNfilm</strong>. Experience the full filmmaking workflow — from scriptwriting to post-production — with professional guidance for your growth.
+                </div>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-num" aria-hidden="true">01</span>
+                        <div>
+                            <h3 lang-text="zh">设备无忧</h3>
+                            <h3 lang-text="en" hidden>Well-Equipped</h3>
+                            <p lang-text="zh">配备索尼微单、多款镜头、稳定器、麦克风等专业摄像设备，随时可用。</p>
+                            <p lang-text="en" hidden>Sony mirrorless cameras, various lenses, gimbals, microphones and other professional gear are available.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-num" aria-hidden="true">02</span>
+                        <div>
+                            <h3 lang-text="zh">团队专业</h3>
+                            <h3 lang-text="en" hidden>Experienced Team</h3>
+                            <p lang-text="zh">社长拥有多年电影创作、拍摄与团队协作经验，带领成员系统成长。</p>
+                            <p lang-text="en" hidden>Our president has years of experience in film creation, shooting and teamwork.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-num" aria-hidden="true">03</span>
+                        <div>
+                            <h3 lang-text="zh">获奖经历</h3>
+                            <h3 lang-text="en" hidden>Award-Winning</h3>
+                            <p lang-text="zh">团队科幻短片《循环之森》斩获奖项，并组织过采访、纪录片等多种项目。</p>
+                            <p lang-text="en" hidden>The sci-fi short film <em>Forest of Loops</em> won awards; the team has also organized interviews, documentaries and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 作品精选 ============ -->
+    <section class="section section-gallery" id="gallery" data-slideshow aria-roledescription="carousel"
+             aria-label="作品精选" data-label-zh="作品精选" data-label-en="Photography gallery">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow"><span lang-text="zh">GALLERY · 影像画廊</span><span lang-text="en" hidden>GALLERY</span></p>
+                <h2 class="section-title"><span lang-text="zh">作品精选</span><span lang-text="en" hidden>Featured Works</span></h2>
+                <p class="section-desc"><span lang-text="zh">26 幅影像，记录我们眼中的世界。点击缩略图或使用方向键浏览。</span><span lang-text="en" hidden>26 frames from our lens. Select a thumbnail or use the arrow keys.</span></p>
+            </div>
+            <div class="carousel-frame gallery-frame">
+                <div class="carousel-stage gallery-stage" tabindex="0"
+                     aria-label="照片预览，可用左右方向键切换" data-label-zh="照片预览，可用左右方向键切换" data-label-en="Photo preview. Use the left and right arrow keys to browse.">
+                    <div class="carousel-track">
+                        <img class="carousel-image" src="assets/gallery/full/DSC_6535.webp"
+                             srcset="assets/gallery/small/DSC_6535.webp 800w, assets/gallery/full/DSC_6535.webp 1600w"
+                             sizes="(max-width: 720px) calc(100vw - 32px), (max-width: 1200px) calc(100vw - 48px), 1152px"
+                             width="1600" height="1068" alt="芒柠影业摄影作品 01，DSC_6535.jpg" decoding="async" draggable="false">
+                    </div>
+                    <button class="carousel-arrow carousel-prev" type="button" data-gallery-step="-1"
+                            aria-label="上一张照片" data-label-zh="上一张照片" data-label-en="Previous photo"><span aria-hidden="true">‹</span></button>
+                    <button class="carousel-arrow carousel-next" type="button" data-gallery-step="1"
+                            aria-label="下一张照片" data-label-zh="下一张照片" data-label-en="Next photo"><span aria-hidden="true">›</span></button>
+                    <button class="carousel-expand" type="button"
+                            aria-label="放大查看照片" data-label-zh="放大查看照片" data-label-en="Enlarge photo"><span aria-hidden="true">⛶</span></button>
+                </div>
+                <div class="carousel-bottomline">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-name">DSC_6535.jpg</div>
+                        <div class="carousel-hint"><span lang-text="zh">点击缩略图 · 左右滑动浏览</span><span lang-text="en" hidden>Select a thumbnail · Swipe to explore</span></div>
+                    </div>
+                    <div class="carousel-tools">
+                        <button class="carousel-autoplay" type="button" aria-label="暂停自动轮播" data-label-zh="暂停自动轮播" data-label-en="Pause automatic slideshow">
+                            <span class="carousel-autoplay-icon" aria-hidden="true">Ⅱ</span>
+                            <span class="carousel-autoplay-label">暂停轮播</span>
+                        </button>
+                        <div class="carousel-counter" aria-live="off" aria-atomic="true"><strong class="carousel-current">01</strong> / <span class="carousel-total">26</span></div>
+                    </div>
+                </div>
+            </div>
+                        <nav class="carousel-thumbs gallery-thumbs" aria-label="选择照片" data-label-zh="选择照片" data-label-en="Choose a photo">
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6535.webp" data-name="DSC_6535.jpg"
+                   data-srcset="assets/gallery/small/DSC_6535.webp 800w, assets/gallery/full/DSC_6535.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 01 张照片：DSC_6535.jpg" aria-current="true">
+                    <img src="assets/gallery/thumbs/DSC_6535.webp" alt="" width="240" height="160" loading="eager" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">01</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5059.webp" data-name="DSC_5059.jpg"
+                   data-srcset="assets/gallery/small/DSC_5059.webp 800w, assets/gallery/full/DSC_5059.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 02 张照片：DSC_5059.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5059.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">02</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5094.webp" data-name="DSC_5094.jpg"
+                   data-srcset="assets/gallery/small/DSC_5094.webp 800w, assets/gallery/full/DSC_5094.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 03 张照片：DSC_5094.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5094.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">03</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5132.webp" data-name="DSC_5132.jpg"
+                   data-srcset="assets/gallery/small/DSC_5132.webp 800w, assets/gallery/full/DSC_5132.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 04 张照片：DSC_5132.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5132.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">04</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5289.webp" data-name="DSC_5289.jpg"
+                   data-srcset="assets/gallery/small/DSC_5289.webp 800w, assets/gallery/full/DSC_5289.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 05 张照片：DSC_5289.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5289.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">05</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5407.webp" data-name="DSC_5407.jpg"
+                   data-srcset="assets/gallery/small/DSC_5407.webp 800w, assets/gallery/full/DSC_5407.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 06 张照片：DSC_5407.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5407.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">06</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5467.webp" data-name="DSC_5467.jpg"
+                   data-srcset="assets/gallery/small/DSC_5467.webp 800w, assets/gallery/full/DSC_5467.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 07 张照片：DSC_5467.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5467.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">07</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5513.webp" data-name="DSC_5513.jpg"
+                   data-srcset="assets/gallery/small/DSC_5513.webp 800w, assets/gallery/full/DSC_5513.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 08 张照片：DSC_5513.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5513.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">08</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5539.webp" data-name="DSC_5539.jpg"
+                   data-srcset="assets/gallery/small/DSC_5539.webp 800w, assets/gallery/full/DSC_5539.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 09 张照片：DSC_5539.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5539.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">09</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5592.webp" data-name="DSC_5592.jpg"
+                   data-srcset="assets/gallery/small/DSC_5592.webp 800w, assets/gallery/full/DSC_5592.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 10 张照片：DSC_5592.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5592.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">10</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5779.webp" data-name="DSC_5779.jpg"
+                   data-srcset="assets/gallery/small/DSC_5779.webp 800w, assets/gallery/full/DSC_5779.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 11 张照片：DSC_5779.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5779.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">11</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_5842.webp" data-name="DSC_5842.jpg"
+                   data-srcset="assets/gallery/small/DSC_5842.webp 800w, assets/gallery/full/DSC_5842.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 12 张照片：DSC_5842.jpg">
+                    <img src="assets/gallery/thumbs/DSC_5842.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">12</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6523.webp" data-name="DSC_6523.jpg"
+                   data-srcset="assets/gallery/small/DSC_6523.webp 800w, assets/gallery/full/DSC_6523.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 13 张照片：DSC_6523.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6523.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">13</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6550.webp" data-name="DSC_6550.jpg"
+                   data-srcset="assets/gallery/small/DSC_6550.webp 800w, assets/gallery/full/DSC_6550.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 14 张照片：DSC_6550.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6550.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">14</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6601.webp" data-name="DSC_6601.jpg"
+                   data-srcset="assets/gallery/small/DSC_6601.webp 800w, assets/gallery/full/DSC_6601.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 15 张照片：DSC_6601.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6601.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">15</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6646.webp" data-name="DSC_6646.jpg"
+                   data-srcset="assets/gallery/small/DSC_6646.webp 800w, assets/gallery/full/DSC_6646.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 16 张照片：DSC_6646.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6646.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">16</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6682.webp" data-name="DSC_6682.jpg"
+                   data-srcset="assets/gallery/small/DSC_6682.webp 800w, assets/gallery/full/DSC_6682.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 17 张照片：DSC_6682.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6682.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">17</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6730.webp" data-name="DSC_6730.jpg"
+                   data-srcset="assets/gallery/small/DSC_6730.webp 800w, assets/gallery/full/DSC_6730.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 18 张照片：DSC_6730.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6730.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">18</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6753.webp" data-name="DSC_6753.jpg"
+                   data-srcset="assets/gallery/small/DSC_6753.webp 800w, assets/gallery/full/DSC_6753.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 19 张照片：DSC_6753.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6753.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">19</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6763.webp" data-name="DSC_6763.jpg"
+                   data-srcset="assets/gallery/small/DSC_6763.webp 800w, assets/gallery/full/DSC_6763.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 20 张照片：DSC_6763.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6763.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">20</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_6972.webp" data-name="DSC_6972.jpg"
+                   data-srcset="assets/gallery/small/DSC_6972.webp 800w, assets/gallery/full/DSC_6972.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 21 张照片：DSC_6972.jpg">
+                    <img src="assets/gallery/thumbs/DSC_6972.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">21</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_7118.webp" data-name="DSC_7118.jpg"
+                   data-srcset="assets/gallery/small/DSC_7118.webp 800w, assets/gallery/full/DSC_7118.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 22 张照片：DSC_7118.jpg">
+                    <img src="assets/gallery/thumbs/DSC_7118.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">22</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/DSC_7136.webp" data-name="DSC_7136.jpg"
+                   data-srcset="assets/gallery/small/DSC_7136.webp 800w, assets/gallery/full/DSC_7136.webp 1600w"
+                   data-width="1600" data-height="1068" aria-label="查看第 23 张照片：DSC_7136.jpg">
+                    <img src="assets/gallery/thumbs/DSC_7136.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">23</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/IMG_8913.webp" data-name="IMG_8913.jpg"
+                   data-srcset="assets/gallery/small/IMG_8913.webp 800w, assets/gallery/full/IMG_8913.webp 1600w"
+                   data-width="1600" data-height="1343" aria-label="查看第 24 张照片：IMG_8913.jpg">
+                    <img src="assets/gallery/thumbs/IMG_8913.webp" alt="" width="240" height="201" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">24</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/IMG_9002_1.webp" data-name="IMG_9002_1.jpg"
+                   data-srcset="assets/gallery/small/IMG_9002_1.webp 800w, assets/gallery/full/IMG_9002_1.webp 1600w"
+                   data-width="1600" data-height="1067" aria-label="查看第 25 张照片：IMG_9002_1.jpg">
+                    <img src="assets/gallery/thumbs/IMG_9002_1.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">25</span>
+                </a>
+                <a class="carousel-thumb" href="assets/gallery/full/IMG_9050.webp" data-name="IMG_9050.jpg"
+                   data-srcset="assets/gallery/small/IMG_9050.webp 800w, assets/gallery/full/IMG_9050.webp 1600w"
+                   data-width="1600" data-height="1067" aria-label="查看第 26 张照片：IMG_9050.jpg">
+                    <img src="assets/gallery/thumbs/IMG_9050.webp" alt="" width="240" height="160" loading="lazy" decoding="async">
+                    <span class="carousel-thumb-number" aria-hidden="true">26</span>
+                </a>
+            </nav>
+            <p class="carousel-status" role="status"></p>
+            <noscript><p class="carousel-hint noscript-hint">启用 JavaScript 后可在画廊内浏览与切换照片。</p></noscript>
+        </div>
+    </section>
+
+    <!-- ============ 活动规划 ============ -->
+    <section class="section" id="activities">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow"><span lang-text="zh">ACTIVITIES · 活动规划</span><span lang-text="en" hidden>ACTIVITIES</span></p>
+                <h2 class="section-title"><span lang-text="zh">活动规划</span><span lang-text="en" hidden>Activities</span></h2>
+            </div>
+            <div class="card-grid activity-grid">
+                <article class="card activity-card">
+                    <span class="card-num" aria-hidden="true">01</span>
+                    <h3 lang-text="zh">电影创作</h3>
+                    <h3 lang-text="en" hidden>Film Production</h3>
+                    <p lang-text="zh">带社团成员体验电影创作完整流程：从前期规划、剧本编写、分镜绘制，到中期拍摄、后期剪辑，让成员真正上手电影创作。</p>
+                    <p lang-text="en" hidden>Members go through the complete filmmaking pipeline: pre-production planning, scriptwriting, storyboarding, on-set shooting and post-editing — hands-on, from start to finish.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="card-num" aria-hidden="true">02</span>
+                    <h3 lang-text="zh">社团联动</h3>
+                    <h3 lang-text="en" hidden>Club Collaboration</h3>
+                    <p lang-text="zh">与其他社团合作拍摄短片，带领成员理解各类动态影像的拍摄创作要点，拓展视野与人脉。</p>
+                    <p lang-text="en" hidden>We co-produce short films with other clubs, helping members master the essentials of dynamic-image creation and broaden their horizons.</p>
+                </article>
+            </div>
+
+            <h3 class="section-subhead"><span lang-text="zh">入社福利</span><span lang-text="en" hidden>Member Benefits</span></h3>
+            <div class="card-grid benefit-grid">
+                <article class="card benefit-item">
+                    <span class="benefit-index" aria-hidden="true">01</span>
+                    <div>
+                        <h3 lang-text="zh">设备免费借用</h3>
+                        <h3 lang-text="en" hidden>Free Equipment Access</h3>
+                        <p lang-text="zh">社团设备免费借用，仅限拍摄与学习使用。</p>
+                        <p lang-text="en" hidden>Free access to club equipment for shooting and learning purposes.</p>
+                    </div>
+                </article>
+                <article class="card benefit-item">
+                    <span class="benefit-index" aria-hidden="true">02</span>
+                    <div>
+                        <h3 lang-text="zh">专业创作培训</h3>
+                        <h3 lang-text="en" hidden>Professional Training</h3>
+                        <p lang-text="zh">获得来自经验丰富成员的电影创作系统培训。</p>
+                        <p lang-text="en" hidden>Filmmaking workshops led by experienced members.</p>
+                    </div>
+                </article>
+                <article class="card benefit-item">
+                    <span class="benefit-index" aria-hidden="true">03</span>
+                    <div>
+                        <h3 lang-text="zh">定期交流研讨</h3>
+                        <h3 lang-text="en" hidden>Regular Seminars</h3>
+                        <p lang-text="zh">定期开展摄影摄像及电影创作交流研讨会。</p>
+                        <p lang-text="en" hidden>Regular seminars for photography and film-creation exchange.</p>
+                    </div>
+                </article>
+                <article class="card benefit-item">
+                    <span class="benefit-index" aria-hidden="true">04</span>
+                    <div>
+                        <h3 lang-text="zh">作品展示机会</h3>
+                        <h3 lang-text="en" hidden>Showcase Opportunities</h3>
+                        <p lang-text="zh">社团为优秀作品提供展示与推广的机会。</p>
+                        <p lang-text="en" hidden>Opportunities to showcase outstanding member works.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 加入我们 ============ -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="section-head">
+                <p class="section-eyebrow"><span lang-text="zh">CONTACT · 加入我们</span><span lang-text="en" hidden>CONTACT</span></p>
+                <h2 class="section-title"><span lang-text="zh">期待才华横溢的你</span><span lang-text="en" hidden>Looking Forward to You</span></h2>
+                <p class="section-desc"><span lang-text="zh">欢迎添加以下微信咨询入社事宜。</span><span lang-text="en" hidden>Add us on WeChat to learn more about joining.</span></p>
+            </div>
+            <div class="card-grid contact-grid">
+                <article class="card contact-card">
+                    <p class="contact-role"><span lang-text="zh">社长</span><span lang-text="en" hidden>President</span></p>
+                    <h3 class="contact-name">Ken Zhao</h3>
+                    <p class="contact-wechat"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Ken_zkf_20110423</p>
+                </article>
+                <article class="card contact-card">
+                    <p class="contact-role"><span lang-text="zh">副社长</span><span lang-text="en" hidden>Vice-President</span></p>
+                    <h3 class="contact-name">Diego Tang</h3>
+                    <p class="contact-wechat"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>DiegoTJH</p>
+                </article>
+                <article class="card contact-card">
+                    <p class="contact-role"><span lang-text="zh">技术支持</span><span lang-text="en" hidden>Tech Support</span></p>
+                    <h3 class="contact-name">Gino Zhang</h3>
+                    <p class="contact-wechat"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>wxid_n1748mwqswkg12</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+    <div class="container footer-inner">
+        <p>© 2025 MNfilm 芒柠影业 · <span lang-text="zh">用镜头讲述你的故事</span><span lang-text="en" hidden>Tell your story with the lens</span></p>
+        <p class="footer-links">
+            <a href="#home"><span lang-text="zh">首页</span><span lang-text="en" hidden>Home</span></a>
+            <a href="#gallery"><span lang-text="zh">作品</span><span lang-text="en" hidden>Gallery</span></a>
+            <a href="#contact"><span lang-text="zh">联系</span><span lang-text="en" hidden>Contact</span></a>
+        </p>
+    </div>
+</footer>
+
+<!-- ============ 大图查看 ============ -->
+<dialog class="carousel-dialog" aria-label="放大照片" data-label-zh="放大照片" data-label-en="Enlarged photograph">
+    <div class="carousel-dialog-inner">
+        <div class="carousel-dialog-top">
+            <span>MNfilm / GALLERY</span>
+            <button class="carousel-close" type="button" aria-label="关闭大图" data-label-zh="关闭大图" data-label-en="Close enlarged photo" autofocus><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="carousel-stage carousel-dialog-stage">
+            <img class="carousel-image" alt="" width="1800" height="1202" draggable="false">
+            <button class="carousel-arrow carousel-prev" type="button" data-gallery-step="-1"
+                    aria-label="上一张照片" data-label-zh="上一张照片" data-label-en="Previous photo"><span aria-hidden="true">‹</span></button>
+            <button class="carousel-arrow carousel-next" type="button" data-gallery-step="1"
+                    aria-label="下一张照片" data-label-zh="下一张照片" data-label-en="Next photo"><span aria-hidden="true">›</span></button>
+        </div>
+        <div class="carousel-dialog-count" aria-live="polite" aria-atomic="true">01 / 26</div>
+    </div>
+</dialog>
+
+<script src="gallery.js?v=8" defer></script>
+</body>
+</html>
