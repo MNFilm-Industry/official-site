@@ -462,6 +462,21 @@
         window.addEventListener('pageshow', () => restartAutoplay());
         document.addEventListener('languagechange', updateLanguage);
 
+        /* ================= 滚动 reveal ================= */
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.section-head, .about-grid, .activity-grid, .benefit-grid, .mntech-hero, .mntech-grid, .contact-grid, .feature-list').forEach(el => {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
+        });
+
         /* 启动 */
         updateLanguage();
         restartAutoplay();
