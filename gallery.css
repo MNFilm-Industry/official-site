@@ -927,6 +927,165 @@ button { font-family: inherit; }
 .contact-wechat svg { flex-shrink: 0; color: var(--gold); }
 
 /* ============================================================
+   MNtech
+   ============================================================ */
+.section-mntech {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 55% 45% at 80% 10%, rgba(100, 160, 220, .06), transparent 70%),
+        radial-gradient(ellipse 50% 50% at 20% 100%, rgba(223, 174, 100, .06), transparent 70%),
+        var(--bg);
+}
+.section-mntech::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(236, 232, 224, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(236, 232, 224, .03) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 75%);
+}
+.section-mntech > .container { position: relative; z-index: 1; }
+
+.mntech-hero {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: clamp(34px, 5vw, 72px);
+    align-items: center;
+    padding: clamp(26px, 4vw, 40px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background:
+        linear-gradient(135deg, rgba(223, 174, 100, .07), rgba(100, 160, 220, .04) 60%, transparent),
+        linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .01));
+}
+.mntech-hero-content { min-width: 0; }
+.mntech-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.mntech-brand-icon {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 174, 100, .45);
+    background: rgba(223, 174, 100, .1);
+    color: var(--gold-bright);
+    font-size: 1.6rem;
+    box-shadow: 0 0 28px rgba(223, 174, 100, .18);
+}
+.mntech-brand-name {
+    font-family: var(--font-mono);
+    font-size: 1.65rem;
+    letter-spacing: .12em;
+    color: var(--text);
+}
+.mntech-brand-tagline {
+    font-size: .88rem;
+    letter-spacing: .04em;
+    color: var(--gold-bright);
+    margin-top: 2px;
+}
+.mntech-hero-lead {
+    font-size: clamp(1.02rem, 1.4vw, 1.15rem);
+    line-height: 1.85;
+    color: var(--text-dim);
+    max-width: 56ch;
+}
+.mntech-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.mntech-hero-visual {
+    display: grid;
+    place-items: center;
+    min-height: 240px;
+}
+.mntech-orbit {
+    position: relative;
+    width: 220px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+.mntech-orbit-core {
+    z-index: 2;
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    letter-spacing: .1em;
+    color: var(--gold-bright);
+    text-shadow: 0 0 20px rgba(223, 174, 100, .45);
+}
+.mntech-orbit-ring {
+    position: absolute;
+    border: 1px solid rgba(223, 174, 100, .25);
+    border-radius: 50%;
+}
+.mntech-orbit-ring-1 { inset: 0; border-top-color: rgba(223, 174, 100, .7); animation: mntech-spin 10s linear infinite; }
+.mntech-orbit-ring-2 { inset: 32px; border-bottom-color: rgba(100, 160, 220, .55); animation: mntech-spin 14s linear infinite reverse; }
+.mntech-orbit-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold-bright);
+    box-shadow: 0 0 12px var(--gold-bright);
+    offset-path: circle(45% at 50% 50%);
+    offset-rotate: 0deg;
+    animation: mntech-orbit 6s linear infinite;
+    animation-delay: var(--delay, 0s);
+}
+@keyframes mntech-spin { to { transform: rotate(360deg); } }
+@keyframes mntech-orbit {
+    0%   { offset-distance: 0%; opacity: 1; }
+    90%  { opacity: .25; }
+    100% { offset-distance: 100%; opacity: 1; }
+}
+
+.mntech-grid { grid-template-columns: repeat(3, 1fr); }
+.mntech-card {
+    padding: 28px 26px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.mntech-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(223, 174, 100, .35);
+    background: rgba(223, 174, 100, .08);
+    font-size: 1.25rem;
+}
+.mntech-card h3 {
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--text);
+}
+.mntech-card p {
+    font-size: .9rem;
+    line-height: 1.7;
+    color: var(--text-dim);
+}
+
+/* ============================================================
    页脚
    ============================================================ */
 footer {
@@ -1044,6 +1203,11 @@ body.gallery-open { overflow: hidden; }
     .hero-content { padding-bottom: 100px; }
     .hero-scroll { display: none; }
     .hero-tools { top: calc(var(--nav-h) + 12px); }
+
+    .mntech-hero { grid-template-columns: 1fr; }
+    .mntech-hero-visual { order: -1; min-height: 180px; }
+    .mntech-orbit { width: 160px; }
+    .mntech-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
@@ -1083,6 +1247,12 @@ body.gallery-open { overflow: hidden; }
     .contact-grid { grid-template-columns: 1fr; }
     .contact-card { padding: 30px 22px 32px; }
 
+    .mntech-hero { padding: 22px; }
+    .mntech-brand-icon { width: 48px; height: 48px; font-size: 1.35rem; }
+    .mntech-brand-name { font-size: 1.4rem; }
+    .mntech-grid { grid-template-columns: 1fr; }
+    .mntech-card { padding: 24px 22px; }
+
     .carousel-dialog { padding: 12px; }
     .carousel-dialog-stage { aspect-ratio: auto; }
     footer { padding: 30px 0 36px; }
@@ -1097,6 +1267,39 @@ body.gallery-open { overflow: hidden; }
         transform: none;
     }
 }
+
+/* ============================================================
+   全局视觉增强
+   ============================================================ */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .55s var(--ease), transform .55s var(--ease);
+    will-change: opacity, transform;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-head,
+.about-grid,
+.activity-grid,
+.benefit-grid,
+.mntech-hero,
+.mntech-grid,
+.contact-grid,
+.feature-list { transition-delay: 0ms; }
 
 /* 减少动态效果偏好 */
 @media (prefers-reduced-motion: reduce) {
